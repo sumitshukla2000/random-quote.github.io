@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&family=League+Spartan:wght@600&family=Montserrat&family=Mulish&family=Poppins:wght@500&family=Roboto+Slab:wght@500&family=Source+Sans+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(90deg,blueviolet ,salmon)
+}
+.wrapper{
+    font-family: 'Poppins', sans-serif;
+    width: 40%;
+    border-radius: 10px;
+    max-height: 100vh;
+    background:rgba(255, 255, 255, 0.527);
+    line-height: 2rem;
+}
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.quote{
+    max-height: 200px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+.author{
+    font-size: 1rem;
+    text-align: right;
+    margin-right: 4rem;
+    margin-top: 20px;
+}
+.btn{
+    margin-top: 2rem;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    background-color: blueviolet;
+    margin-right: 2rem;
+    float: right;
+    display: block;
+    max-width: 100px;
+    transition: 0.3s all ease;
+}
+.btn:hover{
+    box-shadow: 0 0 6px blueviolet;
+    transform: translateY(-2px);
+}
+.icon{
+    margin-top: 2.5rem;
+    width: 20%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+i:hover{
+    transform: translateY(-3px);
+}
+.icon i{
+    border: 2px solid blueviolet;
+    padding: 10px;
+    color: blueviolet;
+    border-radius: 50%;
+    transition: 0.3s all ease;
+}
+
+.icon i:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.active{
+    opacity: 0.6;
+    min-width: 150px;
+}
+
+@media (max-width:430px){
+    body{
+        margin: 20px;
+    }
+    .wrapper{
+        min-width: 100%;
+    }
+    .icon{
+        margin: 0 auto;
+        justify-content: space-between;
+        width: 100%;
+        display: block;
+    }
+    .btn{
+        margin-bottom: 20px;
+        display: flex;
+        justify-items: center;
+        align-items: center;;
+    }
+    .author{
+        margin-right: 40px;
+    }
+}
