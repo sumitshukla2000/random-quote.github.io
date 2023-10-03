@@ -7,7 +7,7 @@ const copy = document.querySelector(".copy");
 function generateQuote(){
     button.classList.add("active");
     button.innerText = "Loading Quote...";
-    fetch("http://api.quotable.io/random")
+    fetch("https://api.quotable.io/random")
     .then(res=>res.json())
     .then(res=>{
         // console.log(res);
