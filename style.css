@@ -38,7 +38,7 @@ body{
     margin-top: 20px;
 }
 .btn{
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     font-weight: 700;
     padding: 10px;
     border-radius: 6px;
@@ -47,10 +47,10 @@ body{
     color: white;
     font-size: 0.9rem;
     background-color: blueviolet;
-    margin-right: 2rem;
-    float: right;
-    display: block;
-    max-width: 100px;
+    /* margin-right: 2rem; */
+    /* float: right; */
+    /* display: block; */
+    /* max-width: 100px; */
     transition: 0.3s all ease;
 }
 .btn:hover{
@@ -58,12 +58,14 @@ body{
     transform: translateY(-2px);
 }
 .icon{
-    margin-top: 2.5rem;
-    width: 20%;
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 20px;
+    /* margin-top: 2.5rem; */
+    width: 200px;
+    /* background:red; */
+    text-align:center;
+    /* margin-bottom: 1rem; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* margin-left: 20px; */
 }
 i:hover{
     transform: translateY(-3px);
@@ -85,27 +87,42 @@ i:hover{
     opacity: 0.6;
     min-width: 150px;
 }
-
-@media (max-width:430px){
+.footer{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row-reverse;
+    width:80%;
+    margin: 20px auto;
+}
+@media (max-width:768px){
+    .wrapper{
+        width:80%;
+    }
+}
+@media (max-width:460px){
     body{
         margin: 20px;
     }
     .wrapper{
-        min-width: 100%;
+        width: 100%;
+    }
+    .footer{
+        flex-direction:column-reverse;
+        justify-content:center;
     }
     .icon{
+        width:200px;
+        padding:10px;
         margin: 0 auto;
-        justify-content: space-between;
-        width: 100%;
-        display: block;
     }
-    .btn{
-        margin-bottom: 20px;
-        display: flex;
-        justify-items: center;
-        align-items: center;;
-    }
+    
     .author{
         margin-right: 40px;
+    }
+}
+@media (max-width:300px){
+    .quote{
+        font-size:14px;
+        line-height:16px;
     }
 }
